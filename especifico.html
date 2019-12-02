@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dermatex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- SCROLLBAR -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body onload="localStorage.removeItem('enf');">
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3><i class="fas fa-allergies"></i> DERMATEX</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="active">
+                    <a href="diagnostico.html">Diagnóstico</a>
+                </li>
+                <li>
+                    <a href="nosotras.html">Información de equipo</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled bottom">
+            	<li>
+            		<p>Universidad Autónoma de Querétaro<br>
+            			Facultad de Informática<br>
+            			<b>Inteligencia Artificial</b>
+            		</p>
+            	</li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="flex-between">
+                    <span><a href="index.html">DERMATEX</a></span>
+                    <button type="button" id="sidebarCollapse" class="flex-vertical" style="outline: none; border: none; background: none;">
+                        <i class="fas fa-bars" style="font-size: 1.2em;"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="main col-xs-12">
+                <div class="flex-vertical col-xs-12 texto">
+                    <h2>Diagnóstico específico</h2>
+                    <p>Selecciona las enfermedades que más se asemejen al problema que presentas, después te presentaremos un cuestionario a razón de elegir la más compatible.</p>
+                </div>
+
+                <div id="selectable">
+                    <div class="enfermedad flex-vertical" id="1" onclick="selectEnf(1)">
+                        <img src="img/Acne.jpg">    
+                        <b id="1_d" >Acne</b>
+                    </div>
+
+                	<div class="enfermedad flex-vertical" id="2" onclick="selectEnf(2)">
+                        <img src="img/Eczema.jpg">   
+                        <b id="2_d" >Eczema</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="3" onclick="selectEnf(3)">
+                        <img src="img/Hidradenitis.jpg">   
+                        <b id="3_d" >Hidradenitis</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="4" onclick="selectEnf(4)">
+                        <img src="img/Impetigo.jpg">   
+                        <b id="4_d" >Impetigo</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="5" onclick="selectEnf(5)">
+                        <img src="img/Molusco Contagioso.jpeg">   
+                        <b id="5_d" >Molusco contagioso</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="6" onclick="selectEnf(6)">
+                        <img src="img/Psoriasis.jpg">   
+                        <b id="6_d" >Psoriasis</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="7" onclick="selectEnf(7)">
+                        <img src="img/Queratosis.jpg">   
+                        <b id="7_d" >Queratosis</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="8" onclick="selectEnf(8)">
+                        <img src="img/Rosacea.jpg">   
+                        <b id="8_d" >Rosacea</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="9" onclick="selectEnf(9)">
+                        <img src="img/Sinus pilodinal.jpg">   
+                        <b id="9_d" >Sinus</b>
+                    </div>
+
+                    <div class="enfermedad flex-vertical" id="10" onclick="selectEnf(10)">
+                        <img src="img/Urticaria.jpg">   
+                        <b id="10_d" >Urticaria</b>
+                    </div>
+                </div>
+
+
+                <div class="flex-vertical col-xs-12 diag-btn">
+                    <button onclick="iniciar();">Iniciar cuestionario</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- JQUERY SCROLLER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- VANILLA JS -->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+
+        
+
+        // var select = [];
+
+        // $(function(){
+        //     $('#selectable').bind( "mousedown", function ( e ){
+        //         e.metaKey = true;
+        //             }).selectable({
+        //                 selected: function (event, ui){
+        //                     if($(ui.selected).hasClass('click-selected'))
+        //                         $(ui.selected).removeClass('ui-selected');
+        //                     else{
+        //                         $(ui.selected).addClass('click-selected');
+        //                         var res = select.push(ui.selected.id);
+        //                         console.log(res);
+        //                     }
+        //                 },
+        //                 unselected: function (event, ui)
+        //                 {
+        //                     $(ui.unselected).removeClass('ui-selected');
+        //                 }
+        //             });
+        // });
+    </script>
+
+</body>
+</html>

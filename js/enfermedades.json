@@ -1,0 +1,55 @@
+{
+    "Enfermedades":{
+        "Eczema":{
+            "Origen":"La dermatitis atópica es una enfermedad de la piel que aparece en la cara y el cuerpo de bebés, niños y adultos. Se caracteriza porque las personas que la padecen sufren anomalías y lesiones en su piel. Los pacientes pueden presentar prurito muy intenso y prolongado, que produce con frecuencia trastornos emocionales. Las lesiones se distribuyen de manera característica, invadiendo cara, cuello y la parte superior del tronco ('capucha de mono'). Así mismo ataca los pliegues de los codos y las rodillas.",
+            "Sintomas":[0.8,1,0.7,0.8,0.9,0.6,0.4,0.4,0.5,0.4,0,0,0.6,0,0.4,0,0,0,0],
+            "tratamiento":"No existe cura para la dermatitis atópica. El tratamiento está dirigido a reducir la agresividad de las erupciones, aliviar al paciente y mejorar su calidad de vida. . Es posible que el médico te recete una crema o un ungüento corticoesteroide."
+        },
+        "Acne":{
+            "Origen":"El acné es una enfermedad que se caracteriza por la aparición de lesiones en la piel como una inflamación y posterior infección del poro folicular (orificio de salida del pelo). Estas lesiones suelen ser granos, espinillas negras y parches rojos e inflamados, como quistes.",
+            "Sintomas":[0.7,0.7,0,0.2,0.1,0,0.8,0.9,0.5,0.8,0,0.3,0.7,0.9,0,0,0,0,0],
+            "tratamiento":"El tratamiento del acné se basa en dos modalidades: la tópica y la sistémica.  MEDICAMENTOS TÓPICOSRetinoides y medicamentos similares a los retinoides. Vienen en crema, gel y loción. Lo que hace es evitar que se tapen los folículos pilosos.Antibióticos. Lo que hacen es matar el exceso de bacterias en la piel y reducir el enrojecimiento.Ácido salicílico y ácido azelaico. El ácido azelaico se encuentra de manera natural en los cereales integrales y en los productos de origen animal.Dapsona. Para el acné inflamatorio.MEDICAMENTOS ORALESAntibióticos. En el caso del acné moderado a grave, es posible que necesites antibióticos orales para eliminar las bacterias y combatir la inflamación.Anticonceptivos orales combinados. La Administración de Alimentos y Medicamentos aprobó cuatro anticonceptivos orales combinados para el tratamiento del acné en mujeres que también desean usarlos como método anticonceptivo.Agentes antiandrógenos. El medicamento espironolactona puede ser una opción para las mujeres y muchachas adolescentes, en caso de que los antibióticos no estén ayudando.Isotretinoína. La isotretinoína es un potente medicamento para las personas cuyo acné grave no responde a los demás tratamientos."
+        },
+        "Psoriasis":{
+            "Origen":"La psoriasis es una enfermedad inflamatoria de la piel, que ocasionalmente también afecta a las articulaciones, y que provoca enrojecimiento, descamación, dolor e hinchazón. La psoriasis es una enfermedad inflamatoria de la piel, que ocasionalmente también afecta a las articulaciones, y que provoca enrojecimiento, descamación, dolor e hinchazón.",
+            "Sintomas":[0,0.9,0.9,0,0.7,0.8,0.8,0.7,0,0,0.8,0.6,0,0,0.5,0,0,0,0.7],
+            "tratamiento":"Corticoesteroides tópicos. Estos medicamentos son los que se recetan con mayor frecuencia para tratar la psoriasis leve a moderada. Reducen la inflamación y alivian la picazón \nAnálogos de la vitamina D. Estas formas sintéticas de vitamina D desaceleran el crecimiento de las células cutáneas. \nAntralina. Este medicamento contribuye a eliminar las escamas y suavizar la piel.  \nRetinoides tópicos. Estos son derivados de la vitamina A que pueden disminuir la inflamación. "
+        },
+        "Hidradenitis":{
+            "Origen":"La hidradenitis supurativa (HS) o hidrosadenitis es una enfermedad inmunitaria crónica y dolorosa caracterizada por áreas inflamadas. A menudo incluye lesiones, nódulos, fístulas y abscesos que suelen aparecer donde hay localizadas muchas glándulas sebáceas y sudoríparas, así como debajo de los senos, en las nalgas y en la zona interna de los muslos, donde la piel se roza; suelen causar dolor y en ocasiones supuración que produce un fuerte olor.",
+            "Sintomas":[1,0.9,0.8,0.9,0.2,0,0,1,0.8,0.7,0,0.9,0.8,0,0.9,0.9,0,0,0],
+            "tratamiento":"Hasta ahora, el tratamiento ha estado orientado a controlar el brote cuando éste aparecía, mediante terapias antibióticas combinadas y tratamientos antiinflamatorios, entre otros; en ocasiones la cirugía ha sido un complemento a esta terapia. "
+        },
+        "Urticaria":{
+            "Origen":"La urticaria es la reacción de la piel caracterizada por la presencia de pequeñas elevaciones, ronchas, de color más claro o rojizo que el resto de la piel que las rodea. Suelen ser pruriginosas y de un tamaño reducido, menos de 1,5 cm de anchura. Por lo general, los brotes de urticaria aparecen y desaparecen; de hecho, una roncha puede durar varias horas, para luego desaparecer y volver a surgir en otro sector",
+            "Sintomas":[0.7,0.8,0,0.5,0.9,0.1,0,0.9,0,0,0.8,0.6,0,0,0.2,0,0.8,0,0.5],
+            "tratamiento":"ANTIHISTAMINICOS \n Loratadina (Claritin) \nFexofenadina (Allegra) \nCetirizina (Zyrtec) \nDesloratadina (Clarinex)"
+        },
+        "Impetigo":{
+            "Origen":"El impétigo consiste en una infección bacteriana por la cual la parte superficial de la piel (epidermis) sufre una inflamación. Se presenta en forma de llagas rojizas que se rompen rápidamente, supuran durante algunos días y luego forman una costra de color marrón amarillento.",
+            "Sintomas":[0.8,0.9,0.6,0,0.7,0,0.9,0,0.8,0.9,0,0.9,0.9,0,0.2,0,0,0,0],
+            "tratamiento":"El impétigo por lo general se trata con una crema o ungüento antibiótico que te aplicas directamente en las llagas. Es posible que primero necesites humedecer la zona afectada con agua tibia o utilizar compresas húmedas para ayudar a eliminar las costras a fin de que el antibiótico pueda penetrar la piel."
+        },
+        "Molusco Contagioso":{
+            "Origen":"El molusco contagioso es una infección viral de la piel que tiene como resultado protuberancias redondas, firmes e indoloras cuyo tamaño varía. Si te rasguñas o lastimas las protuberancias, la infección puede diseminarse a la piel circundante. El molusco contagioso se propaga a través del contacto directo de persona a persona y por el contacto con objetos contaminados.",
+            "Sintomas":[0.5,0.6,0,0.5,0.8,0,0,1,0,0,0,0,0,0,0,0,0,0,0],
+            "tratamiento":", la infección producida por molusco contagioso mejora sin tratamiento luego de 6 a 12 meses. Sin embargo tambien se pueden quitar con algunas opciones como las siguientes:Raspado\n Enfriamiento (crioterapia)\n Un medicamento que produce ampollas (cantaridina), que despega las protuberancias"
+        },
+        "Rosacea":{
+            "Origen":"La rosácea es una afección cutánea frecuente que provoca enrojecimiento y vasos sanguíneos visibles en la cara. Estos signos y síntomas pueden brotar durante un período de semanas a meses y luego disminuir por un tiempo. Se desconoce la causa de la rosácea, pero podría deberse a una combinación de factores hereditarios y ambientales. La rosácea no es producto de una higiene deficiente.",
+            "Sintomas":[0.7,0.9,0,0.9,0.7,0,0,0.7,0.7,0,0.8,0,0,0,0.8,0,0.4,0,0],
+            "tratamiento":"Medicamentos para reducir el enrojecimiento. Estudios recientes demostraron que la brimonidina (Mirvaso) es eficaz para reducir el enrojecimiento. Se aplica en la piel como un gel"
+        },
+        "Sinus pilodinal":{
+            "Origen":"El sinus pilonidal o quiste pilonidal aparece en el pliegue interglúteo, entre las nalgas, contiene piel y folículos pilosos (pelo). La causa usual de su aparición es la incrustación de algún pelo, alojándose e infectando el área hasta formar el quiste.",
+            "Sintomas":[0.8,0.8,0,0.9,0.7,0,0,1,0,0,0,1,0,0.2,0.5,0.9,0.5,0.7,0],
+            "tratamiento":"En un primer momento, si el sinus pilonidal se infecta se suele desinfectar la herida y además, tomar antibióticos. Sin embargo, en muchas ocasiones la infección se repite en el tiempo y es necesario recurrir a la cirugía. "
+        },
+        "Queratosis":{
+            "Origen":"La queratosis es una afección de la piel frecuente e inofensiva, por lo general en la parte superior de los brazos, en los muslos, en las mejillas y en los glúteos. se debe a la acumulación de queratina, una proteína dura que protege la piel contra sustancias dañinas e infecciones. La queratina forma un tapón escamoso que obstruye la abertura del folículo piloso. ",
+            "Sintomas":[0.7,0.6,0.9,0.2,0.9,0.8,0.8,0.8,0,0.7,0.7,0.5,0,0,0.8,0,0,0,0],
+            "tratamiento":"Poco a poco, la queratosis pilaris generalmente desaparece por sí sola. Mientras tanto, puedes utilizar cualquiera de los diversos productos: \nCremas para eliminar las células muertas de la piel. \nCremas para prevenir los folículos obstruidos. "
+        }
+
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dermatex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- SCROLLBAR -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body onload="cargar()">
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3><i class="fas fa-allergies"></i> DERMATEX</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="active">
+                    <a href="diagnostico.html">Diagnóstico</a>
+                </li>
+                <li>
+                    <a href="nosotras.html">Información de equipo</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled bottom">
+            	<li>
+            		<p>Universidad Autónoma de Querétaro<br>
+            			Facultad de Informática<br>
+            			<b>Inteligencia Artificial</b>
+            		</p>
+            	</li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="flex-between">
+                    <span><a href="index.html">DERMATEX</a></span>
+                    <button type="button" id="sidebarCollapse" class="flex-vertical" style="outline: none; border: none; background: none;">
+                        <i class="fas fa-bars" style="font-size: 1.2em;"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="main col-xs-12">
+                <div class="flex-vertical col-xs-12 texto">
+                    <h2>Resultado final</h2>
+                    <p>Con base en las respuestas obtenidas previamente, el diagnóstico final ha arrojado:</p>
+
+                </div>
+
+                <div class="resultado flex col-xs-12">
+                    <div class="flex-vertical">
+                        <br><br><br>
+                        <img  id="image">
+                        <b id="nombre">Impétigo</b>
+                        <div class="dato">
+                            <h4 id="title-origen"></h4>
+                            <p id="origen"></p>
+                        </div>
+                        <div class="dato">
+                            <h4 id="title-tratamiento"></h4>
+                            <p id="tratamiento"></p>
+                        </div>
+                        <br><br><br>
+                        <div class="flex-vertical col-xs-12 diag-btn">
+                            <button onclick="navegar('diagnostico')">Volver a generar diagnóstico</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- JQUERY SCROLLER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- VANILLA JS -->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+</body>
+</html>

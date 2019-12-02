@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dermatex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- SCROLLBAR -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- FONTAWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3><i class="fas fa-allergies"></i> DERMATEX</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="active">
+                    <a href="#">Diagnóstico</a>
+                </li>
+                <li>
+                    <a href="nosotras.html">Información de equipo</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled bottom">
+                <li>
+                    <p>Universidad Autónoma de Querétaro<br>
+                        Facultad de Informática<br>
+                        <b>Inteligencia Artificial</b>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="flex-between">
+                    <span><a href="index.html">DERMATEX</a></span>
+                    <button type="button" id="sidebarCollapse" class="flex-vertical" style="outline: none; border: none; background: none;">
+                        <i class="fas fa-bars" style="font-size: 1.2em;"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="main col-xs-12 nopadding">
+                <div class="flex-vertical col-xs-12">
+                    <h2 style="font-size: 1.8em; font-weight: 500; text-align: center;">Diagnóstico específico</h2>
+                    <p style="text-align: center; padding: 10px; box-sizing: border-box;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+
+                <a class="sliders flex-vertical col-xs-1">
+                    <i class="fas fa-angle-left arrow noactive"></i>   
+                </a>
+
+                <div class="pregunta flex col-xs-10">
+                    <!-- UNO -->
+                    <div class="">
+                        <!-- <div class="flex-vertical">
+                            <h2>¿Ha presentado <b>hinchazón</b> en la piel o zona afectada?</h2>
+
+                            <div class="flex col-xs-12">
+                                <input type= "button" value="Si" class="boton" onclick="respuestaGrado()">
+                                <input type="button" value="No" class="boton">
+                            </div>
+                        </div> -->
+
+                        <div class="flex-vertical">
+                            <h2>Indique el grado de hinchazón que presenta en la zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DOS -->
+                    <div class="item">
+                        <!-- <div class="flex-vertical" id="uno">
+                            <h2>¿Ha presentado <b>hinchazón</b> en la piel o zona afectada?</h2>
+
+                            <div class="flex col-xs-12">
+                                <input type= "button" value="Si" class="boton" onclick="respuestaGrado()">
+                                <input type="button" value="No" class="boton">
+                            </div>
+                        </div> -->
+
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de enrojecimiento que presenta en la zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRES -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de sensibilidad que presenta en la piel o zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CUATRO -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de comezón o picazón que presenta en la piel o zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CUATRO -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de descamación que ha presentado</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CINCO -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de aparición de costrar en la piel o zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SEIS -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de aparición de quistes, bultos duros por encima o debajo de la piel, abscesos o erupciones</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SIETE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de segregación de líquidos en la zonas afectadas</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OCHO -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de presencia de heridas (heridas abiertas sin sanar, lesiones o puntos infectados)</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NUEVE-->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de aparición de manchas en la piel</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DIEZ -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de presencia de dolor en zonas específicas o malestar en general</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ONCE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de aparición de ampollas en la piel o zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DOCE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de aparición de puntos negros o espinillas</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TRECE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de presencia de ardor en la piel o zona afectada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CATORCE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>En caso de que las protuberancias, ampollas o heridas hayan expulsado cierto tipo de líquido, indique el grado de mal olor presentado</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- QUINCE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de presencia de aumento de temperatura corporal (fiebre)</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DIECISEIS -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>En caso de que las protuberancias, ampollas o heridas hayan expulsado sangre, indique el grado de sangre presentada</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- QUINCE -->
+                    <div class="item">
+                        <div class="flex-vertical" id="dos">
+                            <h2>Indique el grado de dolores articulares (principios de artritis)</h2>
+
+                            <div class="flex-vertical col-xs-12">
+                                <input type="range" class="respuesta" min="0" max="10" value="50" id="range">
+
+                                <div class="grado flex-between">
+                                    <img src="img/zero.png">
+                                    <img src="img/one.png">
+                                    <img src="img/two.png">
+                                    <img src="img/three.png">
+                                    <img src="img/four.png">
+                                    <img src="img/five.png">
+                                    <img src="img/six.png">
+                                    <img src="img/seven.png">
+                                    <img src="img/eight.png">
+                                    <img src="img/nine.png">
+                                    <img src="img/ten.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="sliders flex-vertical col-xs-1">
+                    <i class="fas fa-angle-right arrow"></i>   
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/functions.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- JQUERY SCROLLER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+</body>
+</html>
